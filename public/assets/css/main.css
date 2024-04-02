@@ -18,7 +18,7 @@
         "Noto Color Emoji";
     --heading-font: "Montserrat", sans-serif;
     --nav-font: "Lato", sans-serif;
-} 
+}
 
 /* Global Colors */
 :root {
@@ -601,7 +601,7 @@ section {
     right: 15px;
     bottom: 15px;
     z-index: 99999;
-    background-color: var(--accent-color);
+    background-color: var(--pink-merah);
     width: 40px;
     height: 40px;
     border-radius: 4px;
@@ -1384,6 +1384,7 @@ section,
 
 .pricing .pricing-item {
     box-shadow: 0 3px 20px -2px rgba(var(--default-color-rgb), 0.1);
+    border: 3px solid var(--pink-coklat);
     padding: 60px 40px;
     height: 100%;
     position: relative;
@@ -1393,7 +1394,7 @@ section,
 .pricing h3 {
     font-weight: 600;
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 35px;
     text-align: center;
 }
 
@@ -1459,17 +1460,22 @@ section,
 }
 
 .pricing ul {
-    padding: 20px 0;
+    padding: 50px 0;
     list-style: none;
     color: rgba(var(--default-color-rgb), 0.8);
-    text-align: left;
-    line-height: 20px;
+    text-align: center;
+    align-items: center;
+    line-height: 30px;
 }
 
 .pricing ul li {
     padding: 10px 0;
     display: flex;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .pricing ul i {
@@ -1505,22 +1511,24 @@ section,
 }
 
 .pricing .buy-btn:hover {
-    background-color: var(--accent-color);
+    background-color: var(--pink-merah);
     color: var(--contrast-color);
 }
 
 .pricing .featured {
     z-index: 10;
-    border: 3px solid var(--accent-color);
+    border: 3px solid var(--pink-coklat);
 }
 
 .pricing .featured .buy-btn {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
+    background-color: var(--contrast-color);
+    color: rgba(var(--default-color-rgb), 0.8);
+    font-family: var(--heading-font);
 }
 
 .pricing .featured .buy-btn:hover {
-    background-color: rgba(var(--accent-color-rgb), 0.9);
+    background-color: var(--pink-merah);
+    color: var(--contrast-color);
 }
 
 @media (min-width: 992px) {
@@ -1762,8 +1770,8 @@ section,
 }
 
 .call-to-action .cta-btn:hover {
-    background: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    background: #ff9999;
+    border: 2px solid #ff9999;
 }
 
 /* Testimonials Section - Home Page

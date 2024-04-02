@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Owner</title>
+  <title>Lilyan Salon</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -42,9 +42,9 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
-
+ 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="{{ url('admin') }}" class="logo d-flex align-items-center">
         <img src="img/lily_ann__3_-removebg-preview.png" alt="">
         <span class="d-none d-lg-block">Lilyan Salon</span>
       </a>
@@ -211,7 +211,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="img/lily ann (3).png" alt="Profile" class="rounded-circle">
+            {{-- <img src="img/lily ann (3).png" alt="Profile" class="rounded-circle"> --}}
             <span class="d-none d-md-block dropdown-toggle ps-2">Virli</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -270,8 +270,10 @@
   </header><!-- End Header -->
 
   @include('sidebar')
+  <main id="main" class="main">
+    @yield('content')
+  </main>
 
-  @yield('content')
 
   {{-- <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">

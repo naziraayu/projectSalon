@@ -372,7 +372,7 @@ h6 {
 .logo span {
     font-size: 26px;
     font-weight: 700;
-    color: #944e63;
+    color: #643543;
     font-family: "Nunito", sans-serif;
 }
 
@@ -391,7 +391,7 @@ h6 {
     font-size: 32px;
     padding-left: 10px;
     cursor: pointer;
-    color: #012970;
+    color: #643543;
 }
 
 .header .search-bar {
@@ -428,7 +428,7 @@ h6 {
 .header .search-form input {
     border: 0;
     font-size: 14px;
-    color: #b47b84;
+    color: #643543;
     border: 1px solid rgba(1, 41, 112, 0.2);
     padding: 7px 38px 7px 8px;
     border-radius: 3px;
@@ -451,7 +451,7 @@ h6 {
 }
 
 .header .search-form button i {
-    color: #012970;
+    color: #643543;
 }
 
 /*--------------------------------------------------------------
@@ -682,9 +682,9 @@ h6 {
     align-items: center;
     font-size: 15px;
     font-weight: 600;
-    color: #4154f1;
+    color: #643543;
     transition: 0.3;
-    background: #f6f9ff;
+    background: #f6eef1;
     padding: 10px 15px;
     border-radius: 4px;
 }
@@ -692,25 +692,25 @@ h6 {
 .sidebar-nav .nav-link i {
     font-size: 16px;
     margin-right: 10px;
-    color: #4154f1;
+    color: #643543;
 }
 
 .sidebar-nav .nav-link.collapsed {
-    color: #012970;
+    color: #643543;
     background: #fff;
 }
 
 .sidebar-nav .nav-link.collapsed i {
-    color: #899bbd;
+    color: #643543;
 }
 
 .sidebar-nav .nav-link:hover {
-    color: #4154f1;
-    background: #f6f9ff;
+    color: #43232d;
+    background: #f6eef1;
 }
 
 .sidebar-nav .nav-link:hover i {
-    color: #4154f1;
+    color: #43232d;
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
@@ -733,7 +733,7 @@ h6 {
     align-items: center;
     font-size: 14px;
     font-weight: 600;
-    color: #012970;
+    color: #643543;
     transition: 0.3;
     padding: 10px 0 10px 40px;
     transition: 0.3s;
@@ -748,11 +748,11 @@ h6 {
 
 .sidebar-nav .nav-content a:hover,
 .sidebar-nav .nav-content a.active {
-    color: #4154f1;
+    color: #43232d;
 }
 
 .sidebar-nav .nav-content a.active i {
-    background-color: #4154f1;
+    background-color: #643543;
 }
 
 /*--------------------------------------------------------------

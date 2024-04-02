@@ -10,41 +10,42 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
 {
-    // public function login(Request $request) {
-    //     $this->validate($request, [
-    //         'username' => 'required|string',
-    //         'password' => 'required|string|min:6',
-    //     ]);
-
-    //     $loginType = filter_var($request->username, FILTER_VALIDATE_EMAIL) ? 'email' : 'password';
-
-    //     $login = [
-    //         $loginType => $request->email,
-    //         'password' => $request->password,
-    //     ];
-
-    //     if (auth()->attempt($login)) {
-    //         return redirect()->route('dashboard');
-    //     }
-    //     return redirect()->route('login')->with(['error' => 'Email/Password salah.']);
-    // }
-    public function authenticate(Request $request): RedirectResponse
-    {
-        $credentials = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
+    public function login(Request $request) {
+        $this->validate($request, [
+            'username' => 'required|string',
+            'password' => 'required|string|min:6',
         ]);
- 
-        if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
- 
-            return redirect()->intended('dashboard');
+
+        $loginType = filter_var($request->username, FILTER_VALIDATE_EMAIL) ? 'email' : 'password';
+
+        $login = [
+            $loginType => $request->email,
+            'password' => $request->password,
+        ];
+
+        if (auth()->attempt($login)) {
+            return redirect()->route('dashboard');
         }
- 
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ])->onlyInput('email');
+        return redirect()->route('login')->with(['error' => 'Email/Password salah.']);
     }
+    
+    // public function authenticate(Request $request): RedirectResponse
+    // {
+    //     $credentials = $request->validate([
+    //         'email' => ['required', 'email'],
+    //         'password' => ['required'],
+    //     ]);
+ 
+    //     if (Auth::attempt($credentials)) {
+    //         $request->session()->regenerate();
+ 
+    //         return redirect()->intended('admin');
+    //     }
+ 
+    //     return back()->withErrors([
+    //         'email' => 'The provided credentials do not match our records.',
+    //     ])->onlyInput('email');
+    // }
     /*
     |--------------------------------------------------------------------------
     | Login Controller

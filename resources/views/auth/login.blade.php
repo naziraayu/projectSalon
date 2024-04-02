@@ -28,13 +28,18 @@
               </div>
               <div class="col-md-6 col-lg-7 d-flex align-items-center">
                 <div class="card-body p-4 p-lg-5 text-black">
+                  @if (session('status'))
+                  <div class="alert alert-success" role="alert">
+                      {{ session('status') }}
+                  </div>
+                  @endif
   
-                  <form method="GET" action="{{ route('dashboard') }}">
+                  <form method="GET" action="{{ route('template') }}">
                         @csrf
     
                         <div class="d-flex align-items-center mb-3 pb-1">
                             <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
-                            <img src="img/lily_ann__3_-removebg-preview.png" alt="" style="width: 250px; text-align:center">
+                            <img src="img/lily_ann__3_-removebg-preview.png" alt="" style="width: 250px; text-align:center; justify-content: center; align-items:center;">
                         </div>
     
                             <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Login into your account</h5>
@@ -42,19 +47,19 @@
                         <div class="form-outline mb-4">
                             <input type="email" id="email" class="form-control" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus/>
                             @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
+                                <div class="alert alert-danger mt-2">
+                                    {{ $message }}
+                                </div>    
                             @enderror
                         </div>
                             <label class="password" for="password">Password</label>
                         <div class="form-outline mb-4">
                             <input type="password" id="password" class="form-control" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" />
                             @error('password')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror 
+                                <div class="alert alert-danger mt-2">
+                                    {{ $message }}
+                                </div>    
+                            @enderror
                         </div>
     
                         <div class="pt-1 mb-4">
