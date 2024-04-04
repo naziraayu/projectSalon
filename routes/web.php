@@ -56,8 +56,8 @@ Route::post('/reset-password', [ResetPasswordController::class, 'reset'])
 
 Route::get('/data_menu', [MenuController::class, 'index'])->name('data_menu');
 Route::get('/tambah_data_menu', [MenuController::class,'create'])->name('tambah_data_menu');
-Route::get('/edit_data_menu/{id}', [MenuController::class,'edit'])->name('edit_data_menu');
 Route::post('/tambah_data_menu', [MenuController::class,'store'])->name('tambah_data_menu');
-Route::post('/hapus_data_menu/{id}', [MenuController::class,'destroy'])->name('hapus_data_menu');
+Route::get('/edit_data_menu/{id}', [MenuController::class,'edit'])->name('edit_data_menu');
 Route::post('/update_data_menu/{id}', [MenuController::class,'update']);
+Route::post('/hapus_data_menu/{id}', [MenuController::class,'destroy'])->name('hapus_data_menu');
 // Route::get('/admin',[MenuController::class,'index'])->name('admin');

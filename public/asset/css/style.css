@@ -15,7 +15,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background: #f6f9ff;
+    background: #f9f6f6;
     color: #444444;
 }
 
@@ -372,7 +372,7 @@ h6 {
 .logo span {
     font-size: 26px;
     font-weight: 700;
-    color: #643543;
+    color: #000;
     font-family: "Nunito", sans-serif;
 }
 
@@ -381,7 +381,7 @@ h6 {
     z-index: 997;
     height: 60px;
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-    background-color: #fff;
+    background-color: #d9bfbf;
     padding-left: 20px;
     /* Toggle Sidebar Button */
     /* Search Bar */
@@ -391,7 +391,7 @@ h6 {
     font-size: 32px;
     padding-left: 10px;
     cursor: pointer;
-    color: #643543;
+    color: #000;
 }
 
 .header .search-bar {
@@ -428,7 +428,7 @@ h6 {
 .header .search-form input {
     border: 0;
     font-size: 14px;
-    color: #643543;
+    color: #000;
     border: 1px solid rgba(1, 41, 112, 0.2);
     padding: 7px 38px 7px 8px;
     border-radius: 3px;
@@ -474,7 +474,7 @@ h6 {
 }
 
 .header-nav .nav-profile {
-    color: #944e63;
+    color: #000;
 }
 
 .header-nav .nav-profile img {
@@ -571,7 +571,7 @@ h6 {
     font-size: 18px;
     margin-bottom: 0;
     font-weight: 600;
-    color: #444444;
+    color: #000;
 }
 
 .header-nav .profile .dropdown-header span {
